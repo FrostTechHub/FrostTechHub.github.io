@@ -1,13 +1,18 @@
 body {
     margin: 0px;
-    background-color: #ecf0f1;
+    background-color: #f5f6fa;
 }
 
 /*Navigation Bar*/
 .nav_bar {
     overflow: hidden;
     background-color: #7f8c8d;
+    position: fixed;
+    margin: 0px;
+    width: 100%;
+    top: 0;
 }
+
 .nav_bar a{
     float: right;
     color: #ecf0f1;
@@ -22,7 +27,110 @@ body {
     color: #ecf0f1;
 }
 
+/*Contents*/
+.content {
+    padding: 0px 50px 0px 50px;
+}
 /*Home Info*/
 .home_info {
+    font-size: 16px;
+}
+
+/*About Me Info*/
+.about_me_info {
+    padding-right: 26px;  
+}
+
+/*Projects Info - FYP*/
+.project_fyp h4 p{
+    text-align: left;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.project_fyp img {
+    display: block;
+    float: left;
+    padding: 10px 50px 10px 0px;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+/*Projects Info - Auth*/
+.project_auth h4 p{
+    text-align: left;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.project_auth img {
+    display: block;
+    margin-left: auto;
+    padding: 10px 0px 10px 50px;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+/*Projects Info - Arm Fling*/
+.project_arm_fling h4 p{
+    text-align: left;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.project_arm_fling img {
+    border-radius: 100px;
+    padding: 10px 50px 10px 0px;
+    width: 200px;
+    height: 200px;
+}
+
+/*Projects Info - GitHub Pages*/
+.project_github_pages h4 p{
+    text-align: left;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.project_github_pages img {
+    display: block;
+    margin-left: auto;
+    padding: 10px 0px 10px 50px;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+/*Contact Info*/
+.contact_info {
+
+}
+
+.contact_info img {
+    width: 80px;
+    padding-inline-start: 26px;
+}
+
+/*Bottom Bar*/
+.bottom_bar {
+    overflow: hidden;
+    background-color: #7f8c8d;
+    margin: 0px;
+    padding: 10px 26px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.bottom_bar p {
+    text-align: left;
+    text-decoration: none;
     padding-left: 26px;
+    padding-right: 26px;
+    color: #ecf0f1;
+    font-size: 12px;
+    display: inline;
+
 }
