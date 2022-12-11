@@ -1,23 +1,150 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/main.css">
-        <title>Project Showcase - Index Page</title>
-    </head>
-    <body>
-        <div class="nav_bar">
-            <a href="#contact">Contact</a>
-            <a href="#projects">Projects</a>
-            <a href="#about_me">About Me</a>
-            <a href="#home">Home</a>
-        </div><br>
-        <div style="padding: 50px;">
-            <h1>Oops! - 404</h1>
-            <br>
-            <img src="css/under_construction_icon.png" alt="Under Construction Icon" width="200px" height="200px">
-            <br>
-            <p>This page is still under construction! Kindly check back again some time soon! Goodbye!</p>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Project Showcase - Index Page</title>
+</head>
+
+<body>
+    <div class="nav_bar">
+        <a href="#contact">Contact</a>
+        <a href="#projects">Projects</a>
+        <a href="#about_me">About Me</a>
+        <a href="#home">Home</a>
+    </div>
+    <div class="home_info" id="home">
+        <h1>Hello.</h1><br>
+        <h3>Welcome to my portfolio! Use the navigation bar at the top right of the screen to navigate through my portfolio. 
+            If you have any questions or inquiries feel free to contact me via the various communication lines. Hey, hope to see you around soon! &#129305</h3>
+    </div>
+    <div class="about_me_info" id="about_me">
+        <h2>About Me</h2>
+        <img src="css/about_me_pic.JPG" alt="Picture of me">
+        <h3><span>Hello&#128075 My name is Fizry. I am a 22-year-old male living in Singapore (one of the most expensive countries in
+            the world). I graduated from Republic Polytechnic in 2021 with a Diploma in Infocomm Security Management. During my free time, I 
+            would keep myself occupied by attending courses (From either HackTheBox or codeRed). If I'm not doing either of that, I would 
+            play some computer games (E.g Cities Skylines or Planet Coaster) or spend time with my friends and loved ones. Currently, I am serving 
+            my national service with the Singapore Armed Forces (SAF) and due to ORD in less than six months. I plan to continue my studies if 
+            not find a job related to my course.<br><br>During my polytechnic days, I was given the privilege to intern as a security engineer 
+            at Tindo Pte Ltd. A respectable company with a business goal of providing the most trustworthy cybersecurity solutions and 
+            services. I worked on one of their internal projects, DevOps. From there, I then started to learn what the methodology was about 
+            and how to implement it in an existing organization. Needless to say, my learning experience at Tindo Pte Ltd was very fruitful 
+            and informative. I do wish to continue learning more about DevOps and DevOpsSec so that I can broaden my understanding of the methodology.</span></h3>
+    </div>
+    <div class="projects_info" id="projects">
+        <h2>Projects</h2>
+        <h3>Here is a collection of my recent projects. Some of them are school projects whilst others are personal ones(like this website 
+            you're reading). I have added a summary for each project. To view them simply hover your mouse over the project you wish to view. 
+            Do take some time to review them.</h3>
+        <div class="polaroid_row_1">
+            <img src="css/project_fyp_icon.jpg" alt="Project Final Year Icon" style="width: 100%;">
+            <h4 style="text-align: center;"><b><u>Project Final Year</u></b></h4>
+            <div class="overlay">
+                <div class="summary">
+                    <p>Project Graduate was my final year project at Republic Polytechnic. The project is about creating a Real-Time Threat Feed Malware 
+                        Analysis System. The purpose is to allow personnel from security operations control (SOC) to quickly react to IOCs detected within 
+                        the network. So as to prevent (further) compromise of data confidentiality, integrity, and availability.<br><br>The goal for my end of 
+                        the project is to be able to (1) "Pull" indicators of compromise (IOC) feeds from threat intelligence sites (E.g. AlienVault, 
+                        VirusTotal.com). (2) Use commercially available data platforms (E.g. Splunk) to analyze network traffic for phishing emails/websites/etc. 
+                        (3) Correlate & classify the traffic (4) Present it on an interactive dashboard to visualize the correlation with the additional help 
+                        of a GeoMap.<br><br>
+                        Project Graduate has taught me:
+                        <ul>
+                            <li>IOCs - Different Types, what do they mean and where to find them.</li>
+                            <li>Using API to pull the data off intelligence sites and upload it automatically onto Splunk.</li>
+                            <li>Using Python to correlate the data from intelligence sites and network traffic.</li>
+                            <li>Configure Splunk's Interactive Dashboard.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
         </div>
-    </body>
+        <div class="polaroid_row_1">
+            <img src="css/project_auth_logo.png" alt="Project Auth Icon" style="width: 100%;">
+            <h4 style="text-align: center;"><b><u>Project Auth</u></b></h4>
+            <div class="overlay">
+                <div class="summary">
+                    <p>Project Auth is a personal project that I created whilst waiting to be enlisted for National Service(NS). The name Project Auth 
+                        comes from the first four letters of both authentication and authorization. Its aim is to educate its users on the difference 
+                        between authentication and authorization, and how to apply it to real-world contexts.<br><br>To achieve its purpose, the web application 
+                        will contain different pages, each depicting a different method of authentication or authorization. With each method being depicted, 
+                        a real-world context into how the method is implemented will be demonstrated to its user. Allowing them(the users) to have a clearer 
+                        and better understanding of the method. Still, in its development stage, the project has so far completed its theory portion and is 
+                        now 30% completed with the practical portion. Documentation of the project and its processes will soon be available once the web 
+                        applications are cleared of bugs.<br><br>
+                        Project Auth has taught me:
+                        <ul>
+                            <li>Generate a OTP for users to authentication themselves</li>
+                            <li>Send an email via gmail using Python Email Module</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="polaroid_row_2">
+            <img src="css/project_arm_fling_icon.jpg" alt="Project Arm Fling Icon" style="width: 100%;">
+            <h4 style="text-align: center;"><b><u>Project Arm Fling</u></b></h4>
+            <div class="overlay">
+                <div class="summary">
+                    <p>Project Arm Fling is the first personal project which I have generated while serving NS. Its aim is for me to familiarise myself 
+                        with VMware ESXi (An industrial bare-metal hypervisor that is commonly used among organizations). One interesting fact about this 
+                        project is that it uses a Raspberry Pi 8GB to run the bare-metal hypervisor. The reason why I thought this would be a good idea 
+                        is that (1) the cost of the components used in the project is roughly the same as a second-hand laptop. (2) It's customizable (I'm 
+                        able to add more data stores simply by plugging in a 128/1TB thumb drive or SSD). (3) I thought it would be pretty cool to use 
+                        a Raspberry Pi to run VMware ESXi.<br><br>Project Arm Fling primarily focuses on the installation and configuration of the Raspberry Pi. 
+                        My thoughts on the next phase of this project will be to start creating virtual machines(VMs) that run an array of services (E.g. 
+                        MySQL Database, Apache Web Server, Dockers Server, Kubernetes Server, The possibilities are endless). Documentation of the project 
+                        and its step-by-step installation & configuration guide will soon be available. Regular updates to the guide will also be made to 
+                        keep you updated.<br><br>
+                        Project Arm Fling has taught me:
+                        <ul>
+                            <li>Install & configure VMware ESXi Arm Fling on a Raspberry Pi</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="polaroid_row_2">
+            <img src="css/github_pages_icon.png" alt="Project GitHub Pages Icon" style="width: 100%;">
+            <h4 style="text-align: center;"><b><u>Project Showcase</u></b></h4>
+            <div class="overlay">
+                <div class="summary">
+                    <p>Project Showcase is the second personal project which I have produced while serving NS. The goal for this project was to act as a 
+                        public portfolio for educational institutions & organizations to get to know more about me and my work. One remarkable fact about 
+                        this website (if you already didn't notice) is that it is running on GitHub Pages. GitHub Pages is a service that allows its users 
+                        to run a website directly from its repository.<br><br>One awesome fact about GitHub Pages is that you don't even need to know HTML to create 
+                        a website. GitHub Pages employs an open-source tool called "Jekyll" that turns plain text into websites, blogs, or structured documentation. 
+                        But wait, there's more! If you are an existing GitHub user, all the traditional GitHub tools and workflows remain the same, you can even 
+                        write tests for GitHub which will send you a report before you merge your codes.<br><br>GitHub will automatically create and deploy your website 
+                        for you. It allows you to focus on the content of your webpage rather than stressing out on the build and deployment of your website. 
+                        Normally I end my summary with a list of facts or knowledge which I have gained from the project. But Project Showcase is not about 
+                        showing what I have learned, but instead showcasing the journey I have been through to my future educators or executives.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact_info" id="contact">
+        <h2>Contact</h2>
+        <h3><span>Feel free to contact me via any of the communication lines. Hope to meet up with you soon!</span></h3>
+        <div class="contact_icon">
+            <a href="mailto:yourEmail@domain.com?subject=Hello&body=Hi! I just saw your portfolio! Can we connect?"><img
+                    src="css/gmail_icon.png" alt="Gmail Icon Round" id="gmail_logo"></a>
+            <a href="https://www.instagram.com/heyitsfrisky" target="_blank" rel="noopener noreferrer"><img
+                    src="css/instagram_icon.png" alt="Instgram Icon Round" id="instagram_logo"></a>
+            <a href="https://www.linkedin.com/in/fizry-ridzwan" target="_blank" rel="noopener noreferrer"><img
+                    src="css/linkdln_icon.png" alt="Linkdln Icon Round" id="linkedin_logo"></a>
+        </div>
+    </div>
+    <br>
+    <div class="bottom_bar">
+        <p>
+            <span style="float: left;">Version 1.1</span>
+            <span style="float: left; padding-left: 30px;">All rights reserved. &#169</span>
+            <span style="float: left; padding-left: 30px;">All images are opensourced.</span>
+        </p>
+    </div>
+</body>
 </html>

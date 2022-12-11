@@ -1,13 +1,34 @@
+
 body {
     margin: 0px;
+    height: 100%;
+
+    /*Background-Color*/
     background-color: #f5f6fa;
+
+    /*Standardized Fonts*/
+    font-family: 'Trebuchet MS';
+
+    /*Add the ability to scroll*/
+    overflow-y: scroll;
+
+    /*Hide scrollbar for IE, Edge & FireFox*/
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+/*Hide scrollbar for Chrome, Safari & Opera*/
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
 
 /*Navigation Bar*/
 .nav_bar {
     overflow: hidden;
     background-color: #7f8c8d;
-    position: fixed;
+    position: absolute;
     margin: 0px;
     width: 100%;
     top: 0;
@@ -17,7 +38,7 @@ body {
     float: right;
     color: #ecf0f1;
     text-align: center;
-    padding: 14px 26px;
+    padding: 14px 30px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -27,90 +48,181 @@ body {
     color: #ecf0f1;
 }
 
-/*Contents*/
-.content {
-    padding: 0px 50px 0px 50px;
-}
 /*Home Info*/
 .home_info {
-    font-size: 16px;
+    background-image: url("welcome_background.jpg");
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+.home_info h1 {
+    margin-top: 300px;
+    margin-left: 130px;
+}
+
+.home_info h3 {
+    margin-left: 130px;
+    width: 45%;
+    height: auto;
+    text-align: justify;
+    text-decoration: none;
 }
 
 /*About Me Info*/
 .about_me_info {
-    padding-right: 26px;  
+    background-image: url("graph_paper.jpg");
+    width: auto;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
 }
 
-/*Projects Info - FYP*/
-.project_fyp h4 p{
-    text-align: left;
-    text-decoration: none;
-    padding-top: 10px;
+.about_me_info h2 {
+    overflow: hidden;
+    background-color: #7f8c8d;
+    color: #ecf0f1;
+    margin: 0px;
+    padding: 10px 0px 10px 130px;
+    width: auto;
+    height: auto;
 }
 
-.project_fyp img {
+.about_me_info h3 {
+    margin: 15% 10% 0% 0%;
+    padding: 10px 10px 10px 10px;
+    width: 95%;
+    height: auto;
+    text-align: justify;
+}
+
+.about_me_info h3 span {
+    background-color: #ecf0f1;
+}
+
+.about_me_info img {
     display: block;
     float: left;
-    padding: 10px 50px 10px 0px;
-    border-radius: 100px;
-    width: 200px;
-    height: 200px;
+    margin: 7% 5% 7% 5%;
+    padding: 10px 10px 10px 10px;
+    /*border-radius: 150px;*/
+    width: auto;
+    height: 500px;
+    background-color: #bdc3c7;
 }
 
-/*Projects Info - Auth*/
-.project_auth h4 p{
-    text-align: left;
-    text-decoration: none;
-    padding-top: 10px;
+/*Projects Info*/
+.projects_info h2{
+    overflow: hidden;
+    background-color: #7f8c8d;
+    color: #ecf0f1;
+    margin: 0px;
+    padding: 10px 0px 10px 130px;
+    max-width: auto;
+    height: auto;
 }
 
-.project_auth img {
-    display: block;
-    margin-left: auto;
-    padding: 10px 0px 10px 50px;
-    border-radius: 100px;
-    width: 200px;
-    height: 200px;
+.projects_info h3 {
+    padding: 10px 130px 10px 130px;
+    text-align: center;
 }
 
-/*Projects Info - Arm Fling*/
-.project_arm_fling h4 p{
-    text-align: left;
-    text-decoration: none;
-    padding-top: 10px;
+.polaroid_row_1 {
+   width: 30%;
+   background-color: #ecf0f1;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   float: left;
+   padding: 10px;
+   margin: 2% 9.3% 2% 9.3%;
+   position: sticky;
 }
 
-.project_arm_fling img {
-    border-radius: 100px;
-    padding: 10px 50px 10px 0px;
-    width: 200px;
-    height: 200px;
+.polaroid_row_2 {
+    width: 30%;
+    background-color: #ecf0f1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    padding: 10px;
+    margin: 2% 9.3% 5% 9.3%;
+    position: sticky;
+ }
+
+.polaroid_row_1:hover .overlay {
+    opacity: 1;
 }
 
-/*Projects Info - GitHub Pages*/
-.project_github_pages h4 p{
-    text-align: left;
-    text-decoration: none;
-    padding-top: 10px;
+.polaroid_row_2:hover .overlay {
+    opacity: 1;
 }
 
-.project_github_pages img {
-    display: block;
-    margin-left: auto;
-    padding: 10px 0px 10px 50px;
-    border-radius: 100px;
-    width: 200px;
-    height: 200px;
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ecf0f1;
+}
+
+.summary {
+    color: #2c3e50;
+    font-size: 15px;
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    left: 8%;
+    transform: translate(-4.5%, -45%);
+    -ms-transform: translate(-4.5%, -45%);
+    text-align: justify;
 }
 
 /*Contact Info*/
 .contact_info {
-
+    background-image: url("contact_background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
 }
 
-.contact_info img {
+.contact_info h2{
+    overflow: hidden;
+    background-color: #7f8c8d;
+    color: #ecf0f1;
+    margin: 0px;
+    padding: 10px 0px 10px 130px;
+    width: auto;
+    height: auto;
+}
+
+.contact_info h3 {
+    margin: 15% 5% 0% 5%;
+    padding: 10px 10px 10px 10px;
+    width: auto;
+    height: 95%;
+    text-align: center;
+}
+
+.contact_icon {
+    margin: 0% 37% 18% 37%;
+}
+
+.contact_icon img {
     width: 80px;
-    padding-inline-start: 26px;
+    display: inline-block;
+    padding: 20px 20px 20px 20px;
+    margin: 0% auto 0% auto;
 }
 
 /*Bottom Bar*/
@@ -118,17 +230,14 @@ body {
     overflow: hidden;
     background-color: #7f8c8d;
     margin: 0px;
-    padding: 10px 26px;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
+    padding: 10px 30px;
 }
 
 .bottom_bar p {
     text-align: left;
     text-decoration: none;
-    padding-left: 26px;
-    padding-right: 26px;
+    padding-left: 30px;
+    padding-right: 30px;
     color: #ecf0f1;
     font-size: 12px;
     display: inline;
