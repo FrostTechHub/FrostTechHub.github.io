@@ -132,7 +132,15 @@ body::-webkit-scrollbar {
 
 .projects_info h3 {
     padding: 10px 130px 10px 130px;
-    text-align: center;
+    text-align: left;
+}
+
+.projects_info #github_icon {
+    width: 80px;
+    height: 80px;
+    float: right;
+    margin: 1% 2% 0% 5%;
+
 }
 
 .polaroid_row_1 {
