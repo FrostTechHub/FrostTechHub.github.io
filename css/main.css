@@ -92,27 +92,24 @@ body::-webkit-scrollbar {
     height: auto;
 }
 
-.about_me_info h3 {
-    margin: 15% 10% 0% 0%;
-    padding: 10px 10px 10px 10px;
-    width: 95%;
-    height: auto;
-    text-align: justify;
-}
-
-.about_me_info h3 span {
-    background-color: #ecf0f1;
-}
-
 .about_me_info img {
     display: block;
-    float: left;
-    margin: 7% 5% 7% 5%;
-    padding: 10px 10px 10px 10px;
-    /*border-radius: 150px;*/
+    float: right;
+    margin: 3.5% 3% 0% 0%;
+    padding: 1% 1% 1% 1%;
     width: auto;
     height: 500px;
     background-color: #bdc3c7;
+}
+
+.about_me_white_box {
+    background-color: #ecf0f1;
+    color: black;
+    float: left;
+    margin: 10% 0% 0% 2%;
+    padding: 1% 1% 1% 1%;
+    text-align: justify;
+    width: 65%;
 }
 
 /*Projects Info*/
@@ -186,7 +183,7 @@ body::-webkit-scrollbar {
 
 .summary {
     color: #2c3e50;
-    font-size: 15px;
+    font-size: 20px;
     position: absolute;
     top: 25%;
     bottom: 25%;

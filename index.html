@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Project Showcase - Index Page</title>
 </head>
 
@@ -22,17 +22,19 @@
     </div>
     <div class="about_me_info" id="about_me">
         <h2>About Me</h2>
+        <div class="about_me_white_box">
+            <h3><span>
+                Muhammad Fizry is a 22-year-old male living in Singapore. He is currently serving his national service with the Singapore Armed Forces (SAF) 
+                and is due to complete his service in May 2023.<br><br>Before enlisting, Fizry graduated from Republic Polytechnic with a Diploma in Infocomm 
+                Security Management. His passion is fuelled by his desire to understand more about how cybercriminals can exploit people and I.T. systems 
+                to achieve their goals. He keeps up with the lastest news of cyberhacks and trends through reading news and watching tutorials videos.<br><br>His 
+                determination and curious-george mindset has led him to intern at Tindo Pte Ltd. There, he first experimented with DevOps and introduced it to the 
+                company. He also drafted the first Change Management Policy for the company as well. To further strengthen his understanding of cybersecurity, he is 
+                currently taking short courses on HackTheBox as well as Code-Red during his free time.<br><br>Fizry is currently looking for a university placement 
+                in Singapore to further his studies and deepen his knowledge of cybersecurity. Scroll down to the contacts section to connect with Fizry!
+            </span></h3>
+        </div>
         <img src="css/about_me_pic.jpg" alt="Picture of me">
-        <h3><span>Hello&#128075 My name is Fizry. I am a 22-year-old male living in Singapore (one of the most expensive countries in
-            the world). I graduated from Republic Polytechnic in 2021 with a Diploma in Infocomm Security Management. During my free time, I 
-            would keep myself occupied by attending courses (From either HackTheBox or codeRed). If I'm not doing either of that, I would 
-            play some computer games (E.g Cities Skylines or Planet Coaster) or spend time with my friends and loved ones. Currently, I am serving 
-            my national service with the Singapore Armed Forces (SAF) and due to ORD in less than six months. I plan to continue my studies if 
-            not find a job related to my course.<br><br>During my polytechnic days, I was given the privilege to intern as a security engineer 
-            at Tindo Pte Ltd. A respectable company with a business goal of providing the most trustworthy cybersecurity solutions and 
-            services. I worked on one of their internal projects, DevOps. From there, I then started to learn what the methodology was about 
-            and how to implement it in an existing organization. Needless to say, my learning experience at Tindo Pte Ltd was very fruitful 
-            and informative. I do wish to continue learning more about DevOps and DevOpsSec so that I can broaden my understanding of the methodology.</span></h3>
     </div>
     <div class="projects_info" id="projects">
         <h2>Projects</h2>
@@ -43,22 +45,20 @@
         <br>
         <div class="polaroid_row_1">
             <img src="css/project_fyp_icon.jpg" alt="Project Final Year Icon" style="width: 100%;">
-            <h4 style="text-align: center;"><b><u>Project Final Year</u></b></h4>
+            <h4 style="text-align: center;"><b><u>Project Threat Feed</u></b></h4>
             <div class="overlay">
                 <div class="summary">
-                    <p>Project Graduate was my final year project at Republic Polytechnic. The project is about creating a Real-Time Threat Feed Malware 
-                        Analysis System. The purpose is to allow personnel from security operations control (SOC) to quickly react to IOCs detected within 
-                        the network. So as to prevent (further) compromise of data confidentiality, integrity, and availability.<br><br>The goal for my end of 
-                        the project is to be able to (1) "Pull" indicators of compromise (IOC) feeds from threat intelligence sites (E.g. AlienVault, 
-                        VirusTotal.com). (2) Use commercially available data platforms (E.g. Splunk) to analyze network traffic for phishing emails/websites/etc. 
-                        (3) Correlate & classify the traffic (4) Present it on an interactive dashboard to visualize the correlation with the additional help 
-                        of a GeoMap.<br><br>
-                        Project Graduate has taught me:
+                    <p>Project Threat Feed is about using an opensource monitoring system (Splunk) to display real-time threat alerts and statistics 
+                        about the network. Using IOC data pulled from threat intelligence sites (AlienVault, VirusTotal.com), scripts then correlate 
+                        the data and display it as either alerts or statistics in the Splunk dashboard. The purpose of developing such systems is to 
+                        allow personnel from security operations control (SOC) to quickly react threats detected in the network.
+                        <br><br>
+                        Upon completion of this project, Project Threat Feed has taught me:
                         <ul>
-                            <li>IOCs - Different Types, what do they mean and where to find them.</li>
-                            <li>Using API to pull the data off intelligence sites and upload it automatically onto Splunk.</li>
-                            <li>Using Python to correlate the data from intelligence sites and network traffic.</li>
-                            <li>Configure Splunk's Interactive Dashboard.</li>
+                            <li>IOCs – Different types of IOCs</li>
+                            <li>Using API to pull data off intelligence sites</li>
+                            <li>Using python-based scripts to upload and download data as well as correlate them</li>
+                            <li>Configuring Splunk’s Interactive dashboard</li>
                         </ul>
                     </p>
                 </div>
@@ -69,18 +69,15 @@
             <h4 style="text-align: center;"><b><u>Project Auth</u></b></h4>
             <div class="overlay">
                 <div class="summary">
-                    <p>Project Auth is a personal project that I created whilst waiting to be enlisted for National Service(NS). The name Project Auth 
-                        comes from the first four letters of both authentication and authorization. Its aim is to educate its users on the difference 
-                        between authentication and authorization, and how to apply it to real-world contexts.<br><br>To achieve its purpose, the web application 
-                        will contain different pages, each depicting a different method of authentication or authorization. With each method being depicted, 
-                        a real-world context into how the method is implemented will be demonstrated to its user. Allowing them(the users) to have a clearer 
-                        and better understanding of the method. Still, in its development stage, the project has so far completed its theory portion and is 
-                        now 30% completed with the practical portion. Documentation of the project and its processes will soon be available once the web 
-                        applications are cleared of bugs.<br><br>
+                    <p>Project Auth is about educating students the difference between authentication and authorization. Whilst providing them with 
+                        real-world context on how to apply them. Project Auth is based off a web application where students can access either the 
+                        Authentication or Authorization page. Within the page itself there are different examples displayed to students the different 
+                        types of authentication and authorization methods. Still in its development phase, Project Auth hopes to achieve a clearer understanding 
+                        for students. 
+                        <br><br>
                         Project Auth has taught me:
                         <ul>
-                            <li>Generate a OTP for users to authentication themselves</li>
-                            <li>Send an email via gmail using Python Email Module</li>
+                            <li>Use python’s numerous modules to send and generate OTP</li>
                         </ul>
                     </p>
                 </div>
@@ -92,19 +89,15 @@
             <h4 style="text-align: center;"><b><u>Project Arm Fling</u></b></h4>
             <div class="overlay">
                 <div class="summary">
-                    <p>Project Arm Fling is the first personal project which I have generated while serving NS. Its aim is for me to familiarise myself 
-                        with VMware ESXi (An industrial bare-metal hypervisor that is commonly used among organizations). One interesting fact about this 
-                        project is that it uses a Raspberry Pi 8GB to run the bare-metal hypervisor. The reason why I thought this would be a good idea 
-                        is that (1) the cost of the components used in the project is roughly the same as a second-hand laptop. (2) It's customizable (I'm 
-                        able to add more data stores simply by plugging in a 128/1TB thumb drive or SSD). (3) I thought it would be pretty cool to use 
-                        a Raspberry Pi to run VMware ESXi.<br><br>Project Arm Fling primarily focuses on the installation and configuration of the Raspberry Pi. 
-                        My thoughts on the next phase of this project will be to start creating virtual machines(VMs) that run an array of services (E.g. 
-                        MySQL Database, Apache Web Server, Dockers Server, Kubernetes Server, The possibilities are endless). Documentation of the project 
-                        and its step-by-step installation & configuration guide will soon be available. Regular updates to the guide will also be made to 
-                        keep you updated.<br><br>
+                    <p>Project Arm Fling is about creating a virtual lab environment using VMware ESXi (Type 1 Hypervisor) and a Raspberry Pi. With the creation 
+                        of this lab environment, experiments such as creating and running different types of malwares and software will be possible. 
+                        Furthermore, with VMware ESXi, creating virtual routers & switches will allow me to strengthen and boost my networking foundations. Lastly, 
+                        having installed VMware ESXi on a Raspberry Pi offers the opportunity to expand and add a second. Thus, forming a cluster. A 
+                        documentation of the project will be published soon.
+                        <br><br>
                         Project Arm Fling has taught me:
                         <ul>
-                            <li>Install & configure VMware ESXi Arm Fling on a Raspberry Pi</li>
+                            <li>Basic knowledge for managing ESXi</li>
                         </ul>
                     </p>
                 </div>
@@ -115,24 +108,17 @@
             <h4 style="text-align: center;"><b><u>Project Showcase</u></b></h4>
             <div class="overlay">
                 <div class="summary">
-                    <p>Project Showcase is the second personal project which I have produced while serving NS. The goal for this project was to act as a 
-                        public portfolio for educational institutions & organizations to get to know more about me and my work. One remarkable fact about 
-                        this website (if you already didn't notice) is that it is running on GitHub Pages. GitHub Pages is a service that allows its users 
-                        to run a static website directly from its repository.<br><br>One awesome fact about GitHub Pages is that you don't even need to know 
-                        HTML to create a website. GitHub Pages employs an open-source tool called "Jekyll" that turns plain text into websites, blogs, or 
-                        structured documentation. But wait, there's more! If you are an existing GitHub user, all the traditional GitHub tools and workflows 
-                        remain the same, you can even write tests for GitHub which will send you a report before you merge your codes.<br><br>GitHub will 
-                        automatically create and deploy your static website for you. It allows you to focus on the content of your webpage rather than stressing 
-                        out on the build and deployment of your website. Normally I end my summary with a list of facts or knowledge which I have gained from 
-                        the project. But Project Showcase is not about showing what I have learned, but instead showcasing the journey I have been through to 
-                        my future educators or executives.</p>
+                    <p>Project Showcase is about developing a web portfolio for admissions and hiring managers to view when applying for a class or a job. The 
+                        web portfolio contains all necessary information such as biography, past projects and contact details. The webpage uses HTML and 
+                            CSS and is being hosted by GitHub Pages. With it being a personal portfolio, it is meant to be updated regularly or should any of 
+                            the information (E.g., Contact details) change.</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="contact_info" id="contact">
         <h2>Contact</h2>
-        <h3><span>Feel free to contact me via any of the communication lines. Hope to meet up with you soon!</span></h3>
+        <h3><span>Feel free to contact me. Hope to meet up with you soon!</span></h3>
         <div class="contact_icon">
             <a href="mailto:fizry147@gmail.com?subject=Hello&body=Hi! I just saw your portfolio! Can we connect?"><img
                     src="css/gmail_icon.png" alt="Gmail Icon Round" id="gmail_logo"></a>
