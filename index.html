@@ -157,6 +157,11 @@
                     const endTime = new Date(`1970-01-01T${dayData.endTime}:00`);
                     let hoursWorked = (endTime - startTime) / (1000 * 60 * 60); // Difference in hours
 
+                    // Subtract 1 hour if hours worked are more than 8
+                    if (hoursWorked > 8) {
+                        hoursWorked -= 1;
+                    }
+
                     // Ensure no negative hours
                     hoursWorked = Math.max(0, hoursWorked);
 
@@ -180,5 +185,6 @@
             document.getElementById("output").innerHTML = output;
             console.log("Week Data:", weekData);
         }
+
     </script>
 </html>
