@@ -1,140 +1,184 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Casual Hours Calculator</title>
+        <style>
+            body {
+                margin: 70px;
+            }
 
-<head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Project Showcase - Index Page</title>
-</head>
+            table {
+                width: 80%;
+            }
 
-<body>
-    <div class="nav_bar">
-        <a href="#contact">Contact</a>
-        <a href="#projects">Projects</a>
-        <a href="#about_me">About Me</a>
-        <a href="#home">Home</a>
-    </div>
-    <div class="home_info" id="home">
-        <h1>Hello.</h1><br>
-        <h3>Welcome to my portfolio! Use the navigation bar at the top right of the screen to navigate through my portfolio. 
-            If you have any questions or inquiries feel free to contact me via the various communication lines. Hey, hope to see you around soon! &#129305</h3>
-    </div>
-    <div class="about_me_info" id="about_me">
-        <h2>About Me</h2>
-        <div class="about_me_white_box">
-            <h3><span>
-                Muhammad Fizry is a 22-year-old male living in Singapore. He is currently serving his national service with the Singapore Armed Forces (SAF) 
-                and is due to complete his service in May 2023.<br><br>Before enlisting, Fizry graduated from Republic Polytechnic with a Diploma in Infocomm 
-                Security Management. His passion is fuelled by his desire to understand more about how cybercriminals can exploit people and I.T. systems 
-                to achieve their goals. He keeps up with the lastest news of cyberhacks and trends through reading news and watching tutorials videos.<br><br>His 
-                determination and curious-george mindset has led him to intern at Tindo Pte Ltd. There, he first experimented with DevOps and introduced it to the 
-                company. He also drafted the first Change Management Policy for the company as well. To further strengthen his understanding of cybersecurity, he is 
-                currently taking short courses on HackTheBox as well as Code-Red during his free time.<br><br>Fizry is currently looking for a university placement 
-                in Singapore to further his studies and deepen his knowledge of cybersecurity. Scroll down to the contacts section to connect with Fizry!
-            </span></h3>
-        </div>
-        <img src="css/about_me_pic.jpg" alt="Picture of me">
-    </div>
-    <div class="projects_info" id="projects">
-        <h2>Projects</h2>
-        <a href="https://github.com/FrostTechHub"><img src="css/github_icon.png" alt="GitHub Icon" id="github_icon"></a>
-        <h3>Here is a collection of my recent projects. Some of them are school projects whilst others are personal ones(like this website 
-            you're reading). I have added a summary for each project. To view them simply hover your mouse over the project you wish to view. Click on the 
-            GitHub Icon to view more.</h3>
+            td {
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <h2>Casual Hours Calculator</h2>
+        <p>Welcome to the casual calculator where all you need to do is input your hours and the website will calculate the total no. of hours you have worked for</p>
         <br>
-        <div class="polaroid_row_1">
-            <img src="css/project_fyp_icon.jpg" alt="Project Final Year Icon" style="width: 100%;">
-            <h4 style="text-align: center;"><b><u>Project Threat Feed</u></b></h4>
-            <div class="overlay">
-                <div class="summary">
-                    <p>Project Threat Feed is about using an opensource monitoring system (Splunk) to display real-time threat alerts and statistics 
-                        about the network. Using IOC data pulled from threat intelligence sites (AlienVault, VirusTotal.com), scripts then correlate 
-                        the data and display it as either alerts or statistics in the Splunk dashboard. The purpose of developing such systems is to 
-                        allow personnel from security operations control (SOC) to quickly react threats detected in the network.
-                        <br><br>
-                        Upon completion of this project, Project Threat Feed has taught me:
-                        <ul>
-                            <li>IOCs – Different types of IOCs</li>
-                            <li>Using API to pull data off intelligence sites</li>
-                            <li>Using python-based scripts to upload and download data as well as correlate them</li>
-                            <li>Configuring Splunk’s Interactive dashboard</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="polaroid_row_1">
-            <img src="css/project_auth_logo.png" alt="Project Auth Icon" style="width: 100%;">
-            <h4 style="text-align: center;"><b><u>Project Auth</u></b></h4>
-            <div class="overlay">
-                <div class="summary">
-                    <p>Project Auth is about educating students the difference between authentication and authorization. Whilst providing them with 
-                        real-world context on how to apply them. Project Auth is based off a web application where students can access either the 
-                        Authentication or Authorization page. Within the page itself there are different examples displayed to students the different 
-                        types of authentication and authorization methods. Still in its development phase, Project Auth hopes to achieve a clearer understanding 
-                        for students. 
-                        <br><br>
-                        Project Auth has taught me:
-                        <ul>
-                            <li>Use python’s numerous modules to send and generate OTP</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-        </div>
+        <form onsubmit="return main()">
+            <br>
+            <table border="1">
+                <tr>
+                    <td>Employee Name: </td>
+                    <td colspan="2"><input type="text" id="emp_name" required></td>
+                </tr>
+                <tr>
+                    <td>Employee ID: </td>
+                    <td colspan="2"><input type="text" id="emp_id" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Start Time</td>
+                    <td>End Time</td>
+                </tr>
+                <tr>
+                    <td>Monday<br><div id="mon_label"></div></td>
+                    <td><input type="time" id="mon_start_time"></td>
+                    <td><input type="time" id="mon_end_time"></td>
+                </tr>
+                <tr>
+                    <td>Tuesday<br><div id="tue_label"></div></td>
+                    <td><input type="time" id="tue_start_time"></td>
+                    <td><input type="time" id="tue_end_time"></td>
+                </tr>
+                <tr>
+                    <td>Wednesday<br><div id="wed_label"></div></td>
+                    <td><input type="time" id="wed_start_time"></td>
+                    <td><input type="time" id="wed_end_time"></td>
+                </tr>
+                <tr>
+                    <td>Thursday<br><div id="thu_label"></div></td>
+                    <td><input type="time" id="thu_start_time"></td>
+                    <td><input type="time" id="thu_end_time"></td>
+                </tr>
+                <tr>
+                    <td>Friday<br><div id="fri_label"></div></td>
+                    <td><input type="time" id="fri_start_time"></td>
+                    <td><input type="time" id="fri_end_time"></td>
+                </tr>
+                <tr>
+                    <td>Saturday<br><div id="sat_label"></div></td>
+                    <td><input type="time" id="sat_start_time"></td>
+                    <td><input type="time" id="sat_end_time"></td>
+                </tr>
+                <tr>
+                    <td>Sunday<br><div id="sun_label"></div></td>
+                    <td><input type="time" id="sun_start_time"></td>
+                    <td><input type="time" id="sun_end_time"></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Calculate Hours">
+            <input type="reset" value="Reset Fields">
+        </form>
+
         <br>
-        <div class="polaroid_row_2">
-            <img src="css/project_arm_fling_icon.jpg" alt="Project Arm Fling Icon" style="width: 100%;">
-            <h4 style="text-align: center;"><b><u>Project Arm Fling</u></b></h4>
-            <div class="overlay">
-                <div class="summary">
-                    <p>Project Arm Fling is about creating a virtual lab environment using VMware ESXi (Type 1 Hypervisor) and a Raspberry Pi. With the creation 
-                        of this lab environment, experiments such as creating and running different types of malwares and software will be possible. 
-                        Furthermore, with VMware ESXi, creating virtual routers & switches will allow me to strengthen and boost my networking foundations. Lastly, 
-                        having installed VMware ESXi on a Raspberry Pi offers the opportunity to expand and add a second. Thus, forming a cluster. A 
-                        documentation of the project will be published soon.
-                        <br><br>
-                        Project Arm Fling has taught me:
-                        <ul>
-                            <li>Basic knowledge for managing ESXi</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="polaroid_row_2">
-            <img src="css/github_pages_icon.png" alt="Project GitHub Pages Icon" style="width: 100%;">
-            <h4 style="text-align: center;"><b><u>Project Showcase</u></b></h4>
-            <div class="overlay">
-                <div class="summary">
-                    <p>Project Showcase is about developing a web portfolio for admissions and hiring managers to view when applying for a class or a job. The 
-                        web portfolio contains all necessary information such as biography, past projects and contact details. The webpage uses HTML and 
-                            CSS and is being hosted by GitHub Pages. With it being a personal portfolio, it is meant to be updated regularly or should any of 
-                            the information (E.g., Contact details) change.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="contact_info" id="contact">
-        <h2>Contact</h2>
-        <h3><span>Feel free to contact me. Hope to meet up with you soon!</span></h3>
-        <div class="contact_icon">
-            <a href="mailto:fizry147@gmail.com?subject=Hello&body=Hi! I just saw your portfolio! Can we connect?"><img
-                    src="css/gmail_icon.png" alt="Gmail Icon Round" id="gmail_logo"></a>
-            <a href="https://www.instagram.com/heyitsfrisky" target="_blank" rel="noopener noreferrer"><img
-                    src="css/instagram_icon.png" alt="Instgram Icon Round" id="instagram_logo"></a>
-            <a href="https://www.linkedin.com/in/fizry-ridzwan" target="_blank" rel="noopener noreferrer"><img
-                    src="css/linkdln_icon.png" alt="Linkdln Icon Round" id="linkedin_logo"></a>
-        </div>
-    </div>
-    <br>
-    <div class="bottom_bar">
-        <p>
-            <span style="float: left;">Version 1.1</span>
-            <span style="float: left; padding-left: 30px;">All rights reserved. &#169</span>
-            <span style="float: left; padding-left: 30px;">All images have been sourced from an open-sourced website.</span>
-        </p>
-    </div>
-</body>
+        <p>Copy the output below</p>
+        <br>
+        <!--<label>---------------------------------------------------------------------------------</label>-->
+        <div id="output"></div>
+    </body>
+    <script>
+        // Get current date
+        const currentDate = new Date();
+
+        // Get the current day of the week (0 is Sunday, 6 is Saturday)
+        const currentDay = currentDate.getDay();
+
+        // Calculate the difference to get back to Monday (1 is Monday)
+        const diffToMonday = currentDay === 0 ? -6 : 1 - currentDay;
+
+        // Calculate the start of the week (Monday)
+        const monday = new Date(currentDate);
+        monday.setDate(currentDate.getDate() + diffToMonday);
+
+        // Array to hold the days of the week
+        const weekDates = [];
+
+        // Create an array of dates from Monday to Sunday
+        for (let i = 0; i < 7; i++) {
+            const day = new Date(monday);
+            day.setDate(monday.getDate() + i);
+            weekDates.push(formatDate(day));  // Format the date as a string
+        }
+
+        document.getElementById("mon_label").innerHTML = weekDates[0];
+        document.getElementById("tue_label").innerHTML = weekDates[1];
+        document.getElementById("wed_label").innerHTML = weekDates[2];
+        document.getElementById("thu_label").innerHTML = weekDates[3];
+        document.getElementById("fri_label").innerHTML = weekDates[4];
+        document.getElementById("sat_label").innerHTML = weekDates[5];
+        document.getElementById("sun_label").innerHTML = weekDates[6];
+
+        // Function to format the date as "date/month"
+        function formatDate(date) {
+            const day = date.getDate(); // Get the day
+            const month = date.getMonth() + 1; // Get the month (add 1 because months are 0-based)
+            return `${day}/${month}`;
+        } 
+
+        function getDayData(day){
+            const startTime = document.getElementById(day + "_start_time").value;
+            const endTime = document.getElementById(day + "_end_time").value;
+
+            return {startTime, endTime};
+        }
+
+        function main() {
+            // Prevent form submission and page reload
+            event.preventDefault();
+
+            // Retrieve employee name and ID
+            const emp_name = document.getElementById("emp_name").value;
+            const emp_id = document.getElementById("emp_id").value;
+
+            const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+            let totalHoursWorked = 0; // Initialize total hours worked
+            const weekData = [];
+
+            let output = `Name: ${emp_name}<br>EMP ID: ${emp_id}<br><br><br>`;
+
+            days.forEach((day, index) => {
+                const dayData = getDayData(day);
+
+                // Only process if startTime and endTime are provided
+                if (dayData.startTime && dayData.endTime) {
+                    // Calculate total hours worked
+                    const startTime = new Date(`1970-01-01T${dayData.startTime}:00`);
+                    const endTime = new Date(`1970-01-01T${dayData.endTime}:00`);
+                    let hoursWorked = (endTime - startTime) / (1000 * 60 * 60); // Difference in hours
+
+                    // Ensure no negative hours
+                    hoursWorked = Math.max(0, hoursWorked);
+
+                    // Add hours worked for the current day to the total
+                    totalHoursWorked += hoursWorked;
+
+                    // Add the day's work hours to the output in the desired format
+                    const dateLabel = weekDates[index]; // Get the date from your earlier array of dates
+                    output += `${dateLabel} : ${dayData.startTime} - ${dayData.endTime} [${hoursWorked.toFixed(2)} HRS]<br>`;
+                }
+            });
+
+            // Get the current date
+            const currentDate = new Date();
+            const formattedDate = `${currentDate.getDate()}/${currentDate.getMonth() + 1}`; // Format the current date as day/month
+
+            // Add total hours worked and the current date to the output
+            output += `<br>Total hrs : ${totalHoursWorked.toFixed(2)} HRS (as of ${formattedDate})<br>`;
+
+            // Display the formatted output
+            document.getElementById("output").innerHTML = output;
+            console.log("Week Data:", weekData);
+        }
+    </script>
 </html>
