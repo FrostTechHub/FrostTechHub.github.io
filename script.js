@@ -30,21 +30,21 @@ function showImages() {
     gallery.classList.remove("hidden");
 
     const images = [
-        "images/photo_1.jpg",
-        "images/photo_2.jpg",
-        "images/photo_3.jpg",
-        "images/photo_4.jpg",
-        "images/photo_5.jpg",
-        "images/photo_6.jpg",
-        "images/photo_7.jpg",
-        "images/photo_8.jpg",
-        "images/photo_9.jpg",
-        "images/photo_10.jpg",
-        "images/photo_11.jpg",
-        "images/photo_12.jpg",
-        "images/photo_13.jpg",
-        "images/photo_14.jpg",
-        "images/photo_15.jpg"
+        "images/photo1.jpg",
+        "images/photo2.jpg",
+        "images/photo3.jpg",
+        "images/photo4.jpg",
+        "images/photo5.jpg",
+        "images/photo6.jpg",
+        "images/photo7.jpg",
+        "images/photo8.jpg",
+        "images/photo9.jpg",
+        "images/photo10.jpg",
+        "images/photo11.jpg",
+        "images/photo12.jpg",
+        "images/photo13.jpg",
+        "images/photo14.jpg",
+        "images/photo15.jpg"
     ];
 
     images.forEach((src, index) => {
